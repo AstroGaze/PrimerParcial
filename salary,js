@@ -1,0 +1,8 @@
+function calculateSalaryWithTax(dailySalary) {
+  const monthlySalary = dailySalary * 30;
+  const iva = monthlySalary * 0.16;
+  const salaryWithTax = monthlySalary - iva;
+  return salaryWithTax;
+}
+
+module.exports = calculateSalaryWithTax;
